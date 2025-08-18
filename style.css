@@ -34,14 +34,14 @@ button{
 }
 
 @media (max-width:576px) {
-    .links {
+    .nav_links {
         flex-direction: column !important;
         background-color: #000000 !important;
         max-height: 0;
         overflow: hidden;
     }
 
-    #menu-Btn:checked~.links {
+    #menu-Btn:checked~.nav_links {
         max-height: 400px;
         padding: 20px;
         position: absolute;
