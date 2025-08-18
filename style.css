@@ -32,3 +32,23 @@
 button{
     white-space: nowrap;
 }
+
+@media (max-width:576px) {
+    .links {
+        flex-direction: column !important;
+        background-color: #000000 !important;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #menu-Btn:checked~.links {
+        max-height: 400px;
+        padding: 20px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        align-items: start;
+        font-weight: 600;
+        z-index: 9999;
+    }
+}

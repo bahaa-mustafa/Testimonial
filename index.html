@@ -13,28 +13,31 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-secondary-subtle">
-        <div class="container-fluid ms-5 me-5">
+        <div class="container-fluid ms-5 me-5 d-flex justify-content-between ">
             <a class="navbar-brand" href="#"><img src="assets/img/Sample Logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-light pe-3" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light pe-3" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light pe-3" href="#">Community</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light pe-3" aria-disabled="true">Support</a>
-                    </li>
-                </ul>
-            </div>
+
+            <input type="checkbox" id="menu-Btn" hidden>
+
+
+            <ul class="navbar-nav d-sm-flex flex-row links">
+                <li class="nav-item">
+                    <a class="nav-link text-light pe-3" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light pe-3" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light pe-3" href="#">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light pe-3" aria-disabled="true">Support</a>
+                </li>
+            </ul>
+
+
+            <label for="menu-Btn" class="list-Btn d-block d-sm-none bg-dark-subtle"><img src="assets/img/menu-02.png" alt=""></label>
+
+
         </div>
     </nav>
     <!-- end navbar -->
@@ -44,10 +47,10 @@
         <div class="container-fluid">
             <div class="row card text-bg-dark rounded-0">
                 <div>
-                    <img src="assets/img/Rectangle.png" class="card-img w-100 rounded-0" alt="...">
+                    <img src="assets/img/Rectangle.png" class="card-img w-100 rounded-0 h-100" alt="...">
                 </div>
                 <div class="card-img-overlay hero_text">
-                    <h1 class="card-title pb-5 fs-1 fw-medium">The largest community of photo enthusiasts</h1>
+                    <h1 class="card-title pb-2 pt-1 fs-1 fw-medium">The largest community of photo enthusiasts</h1>
                     <p class="card-text"><button class="btn btn-danger ps-4 pe-4">Join Today</button></p>
                 </div>
             </div>
@@ -58,10 +61,10 @@
     <!-- body -->
     <div class="body">
         <div class="container-fluid">
-            <div class="row my-5 mx-3">
+            <div class="row d-flex flex-column flex-sm-row my-5 mx-3">
 
-                <div class="col-4 border-0 ">
-                    <div class="mb-5"><img src="assets/img/Ellipse.png" class="figure-img img-fluid m-auto d-flex"
+                <div class="col border-0 mb-5">
+                    <div class="mb-4"><img src="assets/img/Ellipse.png" class="figure-img img-fluid m-auto d-flex"
                             alt="..."></div>
                     <div class="card-body hero_text">
                         <h5 class="card-title fs-5 fw-bold mb-3">Sed ut perspiciatis</h5>
@@ -70,8 +73,8 @@
                     </div>
                 </div>
 
-                <div class="col-4 border-0">
-                    <div class="mb-5">
+                <div class="col border-0 mb-5">
+                    <div class="mb-4">
                         <img src="assets/img/Ellipse1.png" class="figure-img img-fluid m-auto d-flex" alt="...">
                     </div>
                     <div class="card-body hero_text">
@@ -80,8 +83,8 @@
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
                     </div>
                 </div>
-                <div class="col-4 border-0">
-                    <div class="mb-5">
+                <div class="col border-0 mb-5">
+                    <div class="mb-4">
                         <img src="assets/img/Ellipse2.png" class="mb-0 figure-img img-fluid m-auto d-flex" alt="...">
                     </div>
                     <div class="card-body hero_text">
@@ -105,7 +108,8 @@
                 </div>
                 <div class="card-img-overlay hero_text">
                     <h3 class="card-title pb-3 fw-light fs-1">You 're in good company</h3>
-                    <p class="card-text ps-5 pe-5 fw-light fs-2 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <p class="card-text ps-5 pe-5 fw-light fs-2 w-100">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
                         elit,
                         sed do eiusmod tempor incididunt ut labore</p>
                 </div>
@@ -135,28 +139,29 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="row_top d-flex flex-row justify-content-between py-5 my-5 border-bottom border-secondary-subtle">
-                    <a href="" class="navbar-brand col">
+                <div
+                    class="row_top d-flex flex-sm-row flex-column justify-content-between py-5 my-5 border-bottom border-secondary-subtle">
+                    <a href="" class="navbar-brand col mb-5">
                         <img src="assets/img/Sample Logo black.png" alt="">
                     </a>
-                    <div class="links col d-flex flex-row justify-content-end justify-content-evenly">
+                    <div class="links col d-flex flex-sm-row flex-column justify-content-end justify-content-evenly">
 
-                        <div class="links_lists col flex-row d-flex gap-5">
-                            <div class="links_list d-flex flex-column">
+                        <div class="links_lists col flex-row d-flex gap-5 mb-5">
+                            <div class="links_list d-flex flex-column col">
                                 <a href="">Mobile app</a>
                                 <a href="">Features </a>
                                 <a href="">Live share</a>
                                 <a href="">Video record</a>
                             </div>
 
-                            <div class="links_list d-flex flex-column">
+                            <div class="links_list d-flex flex-column col">
                                 <a href="">Community</a>
                                 <a href="">Featured artists </a>
                                 <a href="">The Portal</a>
                                 <a href="">Live events</a>
                             </div>
 
-                            <div class="links_list d-flex flex-column">
+                            <div class="links_list d-flex flex-column col">
                                 <a href="">Company</a>
                                 <a href="">About us</a>
                                 <a href="">Contact us</a>
